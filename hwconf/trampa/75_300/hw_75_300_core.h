@@ -220,7 +220,7 @@
 #define HW_ICU_PIN				6
 
 // I2C Peripheral
-#define HW_I2C_DEV				I2CD2
+#define HW_I2C_DEV				  I2CD2
 #define HW_I2C_GPIO_AF			GPIO_AF_I2C2
 #define HW_I2C_SCL_PORT			GPIOB
 #define HW_I2C_SCL_PIN			10
