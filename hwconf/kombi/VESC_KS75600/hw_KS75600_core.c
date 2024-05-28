@@ -93,12 +93,6 @@ void hw_init_gpio(void) {
 			PAL_STM32_OSPEED_HIGHEST);
 	CURRENT_FILTER_OFF();
 
-	// AUX pin
-	AUX_OFF();
-	palSetPadMode(AUX_GPIO, AUX_PIN,
-			PAL_MODE_OUTPUT_PUSHPULL |
-			PAL_STM32_OSPEED_HIGHEST);
-
 	// ADC Pins
 	palSetPadMode(GPIOA, 0, PAL_MODE_INPUT_ANALOG);
 	palSetPadMode(GPIOA, 1, PAL_MODE_INPUT_ANALOG);
