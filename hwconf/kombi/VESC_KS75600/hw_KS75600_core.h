@@ -131,7 +131,7 @@
 // NTC Termistors
 //TODO NTC参数后面要调整，包括电机和mos的
 #define NTC_RES(adc_val)		((4095.0 * 10000.0) / adc_val - 10000.0)
-#define NTC_TEMP(adc_ind)		hw100_400_get_temp()
+#define NTC_TEMP(adc_ind)		hwks75600_get_temp() 
 
 #define NTC_RES_MOTOR(adc_val)	(10000.0 / ((4095.0 / (float)adc_val) - 1.0)) // Motor temp sensor on low side
 #define NTC_TEMP_MOTOR(beta)	(1.0 / ((logf(NTC_RES_MOTOR(ADC_Value[ADC_IND_TEMP_MOTOR]) / 10000.0) / beta) + (1.0 / 298.15)) - 273.15)
